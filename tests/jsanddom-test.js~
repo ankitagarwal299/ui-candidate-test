@@ -140,7 +140,7 @@ test( "SELECT element test ", 1, function() {
 
 //==================================================================================================================
 module( "Write 5 different jQuery selectors to retrieve the sample anchor in the markup below Test" );
-test( "Anchor element selector test ", 1, function() {
+test( "Anchor element selector test ", 2, function() {
     // Verify the method exists
     equal( typeof $(document).ready(), 'object', 'Must contain a $(document).ready() object' );
   

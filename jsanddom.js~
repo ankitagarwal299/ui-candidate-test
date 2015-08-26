@@ -220,24 +220,27 @@ function json (){
      // SELECT element (with multiple items) and a button.
      // when the button is clicked write out the name and value of the selected item to the console.
 	
-	$(document).ready(function(){
-	var array = ["item1","item2","item3","item4"];
+$(document).ready(function(){
+var array = ["item1","item2","item3","item4"];
 	
-			$select =  $("<select id= 'Select'></select>");
-			for (var i = 0; i < array.length; i++) {
-				$option =$("<option value ="+ i+">"+ array[i] +"</option>");
-				$select.append($option);
-			}
+		$select =  $("<select id= 'Select'></select>");
+		for (var i = 0; i < array.length; i++) {
+			$option =$("<option value ="+ i+">"+ array[i] +"</option>");
+			$select.append($option);
+		}
 	
-		      $('#div1').append($select);
-		      $button1 = "<button type='button' id='bu'>Try it</button>"
-		      $('#div1').append($button1);
-		      
-		       $('#bu').click(function(event){
-			       console.log( $( "#Select" ).val());
-			       console.log( $( "#Select option:selected" ).text());
-			});
-	});
+	      $('#div1').append($select);
+	      $button1 = "<button type='button' id='bu'>Try it</button>"
+	      $('#div1').append($button1);
+	      
+	       $('#bu').click(function(event){
+		       console.log( $( "#Select" ).val());
+		       console.log( $( "#Select option:selected" ).text());
+		       
+			
+		});
+
+});
 
 
 
